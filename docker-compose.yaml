@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  db:
+    image: 'postgres:14.8'
+    container_name: curso
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=alunos
+    ports:
+      - 5432:5432
